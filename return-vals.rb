@@ -1,5 +1,5 @@
 def my_method(a)
-  return a + 2
+  a + 2
 end
 
 
