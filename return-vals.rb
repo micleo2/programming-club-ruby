@@ -1,7 +1,7 @@
-def my_method(a)
-  a + 2
+def my_method
+  puts "about to enter yield"
+  yield 5
+  puts "exiting my_method"
 end
 
-
-val = my_method 3
-puts val
+my_method {|x| puts "INSIDE OF BLOCK -- parameter is #{x}"}
